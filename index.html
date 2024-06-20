@@ -23,15 +23,22 @@
         <!-- Aquí se mostrará el contenido del JSON -->
     </div>
 
+    <a href="peliculas.json" id="jsonLink" target="_blank">Abrir JSON</a>
+
     <script>
-        // Cargar el archivo JSON
-        fetch('peliculas.json')
-            .then(response => response.json())
-            .then(data => {
-                // Mostrar el contenido del JSON formateado
-                document.getElementById('jsonContent').innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
-            })
-            .catch(error => console.error('Error al cargar el archivo JSON', error));
+        // Evento click para el enlace
+        document.getElementById('jsonLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevenir que el enlace cambie de página
+
+            // Realizar la solicitud para obtener el contenido del JSON
+            fetch(this.getAttribute('href'))
+                .then(response => response.json())
+                .then(data => {
+                    // Mostrar el contenido del JSON formateado
+                    document.getElementById('jsonContent').innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                })
+                .catch(error => console.error('Error al cargar el archivo JSON', error));
+        });
     </script>
 </body>
 </html>
