@@ -1,44 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostrar JSON en HTML</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Enlaces</title>
+  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .lista-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 10px;
+      width: 300px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-   
-    <div id="jsonContent">
-        <!-- Aquí se mostrará el contenido del JSON -->
+
+  <div class="lista-container">
+    <div class="card">
+      <h2>API Categoría 1</h2>
+      <ul>
+        <a href="productos.json" target="_blank"> <li>Productos</li></a>
+        <a href="celulares.json" target="_blank"><li>Celulares</li></a>
+        <a href="menu.json" target="_blank"><li>Menú</li></a>
+        <a href="ropa.json" target="_blank"><li>Ropa</li></a>
+        <a href="fitnes.json" target="_blank"><li>Fitness</li></a>
+        <a href="laptop.json" target="_blank"><li>Laptop</li></a>
+        <a href="arriendo.json" target="_blank"><li>Arriendo</li></a>
+        <a href="bicicletas.json" target="_blank"><li>Bicicletas</li></a>
+        <a href="usuarios.json" target="_blank"><li>Usuarios</li></a>
+
+      </ul>
     </div>
 
-    <a href="peliculas.json" id="jsonLink" target="_blank">Abrir JSON</a>
+    <div class="card">
+      <h2>API Categoría 2</h2>
+      <ul>
+        <a href="crash.json" target="_blank"><li>Crash Data</li></a>
+       <a href="video_juegos.json" target="_blank"><li>Videojuegos</li></a>
+       <a href="ciudades.json" target="_blank"><li>Ciudades</li></a>
+       <a href="peliculas.json" target="_blank"><li>Películas</li></a>
+      </ul>
+    </div>
 
-    <script>
-        // Evento click para el enlace
-        document.getElementById('jsonLink').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevenir que el enlace cambie de página
+    <div class="card">
+      <h2>API Categoría 3</h2>
+      <ul>
+        <a href="crash.json" target="_blank"><li>Crash Data</li></a>
+       <a href="videojuegos.json" target="_blank"><li>Videojuegos 2</li></a>
+       <a href="ciudades.json" target="_blank">Ciudades</a>
+      </ul>
+    </div>
 
-            // Realizar la solicitud para obtener el contenido del JSON
-            fetch(this.getAttribute('href'))
-                .then(response => response.json())
-                .then(data => {
-                    // Mostrar el contenido del JSON formateado
-                    document.getElementById('jsonContent').innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
-                })
-                .catch(error => console.error('Error al cargar el archivo JSON', error));
-        });
-    </script>
+   
+
+    <div class="card">
+      <h2>Datasets</h2>
+      <ul>
+        <a href="cars.csv" target="_blank"><li>Dataset</li></a>
+      </ul>
+    </div>
+  </div>
+
 </body>
 </html>
