@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar JSON en HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="jsonContent">
+        <!-- Aquí se mostrará el contenido del JSON -->
+    </div>
+
+    <script>
+        // Cargar el archivo JSON
+        fetch('pelicula.json')
+            .then(response => response.json())
+            .then(data => {
+                // Mostrar el contenido del JSON formateado
+                document.getElementById('jsonContent').innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            })
+            .catch(error => console.error('Error al cargar el archivo JSON', error));
+    </script>
+</body>
+</html>
