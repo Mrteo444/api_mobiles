@@ -1,38 +1,37 @@
 [
-    {
-      "titulo": "The boys",
+  {
+      "titulo": "Origen",
       "anio": 2010,
       "descripcion": "Un ladron que roba secretos corporativos mediante el uso de la tecnologia de compartir suenos recibe la tarea inversa de plantar una idea en la mente de un CEO.",
-      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/88a0f6bf4f033bc2fe2e35d0b08b022abf3da66766580dcbc863bb4ca725a740.jpg",
+      "imagen": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-peliculas/origen.jpg",
       "url": "https://firebasestorage.googleapis.com/v0/b/app-login-13c72.appspot.com/o/videos%2FOrigen2.mp4?alt=media&token=b2990342-9dc0-4e9e-8e5e-153e8adeb4ca"
-    },
-    {
-      "titulo": "Stranger Things",
-      "anio": 2016,
-      "descripcion": "Cuando un niño desaparece, sus amigos y familiares descubren un misterio sobrenatural y encuentran una niña con poderes telequinéticos.",
-      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/618a297d7b85a826f1a82d6a1db3a9f6e585e4947fbc256f25d3a5e4e31b78e6.jpg",
-      "url": "https://www.netflix.com/title/80057281"
-    },
-    {
-      "titulo": "Game of Thrones",
-      "anio": 2011,
-      "descripcion": "En un mundo ficticio donde las familias nobles luchan por el control del Trono de Hierro, surge una oscura amenaza desde el norte.",
-      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/6b1e8d7f110a8f84e431a46ec32e82f15b4e7d69b1c1f76d334e94f18a08b43a.jpg",
-      "url": "https://www.hbo.com/game-of-thrones"
-    },
-    {
-      "titulo": "Breaking Bad",
+  },
+  {
+      "titulo": "Ami ",
       "anio": 2008,
-      "descripcion": "Un profesor de química con cáncer terminal se convierte en un fabricante de metanfetaminas para asegurar el futuro financiero de su familia, desatando una espiral de eventos peligrosos.",
-      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/6ab05f3ce7e5e312cc69a2d48b22f45dbf7b1f2cfa84d62c6ff6b894646fda1d.jpg",
-      "url": "https://www.netflix.com/title/70143836"
-    },
-    {
-      "titulo": "The Mandalorian",
-      "anio": 2019,
-      "descripcion": "En las afueras de la galaxia, un cazarrecompensas solitario se embarca en peligrosas misiones mientras cuida de un misterioso niño que posee poderes extraordinarios.",
-      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/3f16ee5e2ce8d4b28e3f38f2c0ba50c30d05edec02a0275c92a8484e37e76d95.jpg",
-      "url": "https://www.disneyplus.com/series/the-mandalorian/3jLIGMDYINqD"
-    }
-  ]
-  
+      "descripcion": "Cuando la amenaza conocida como el Joker causa estragos y caos en la gente de Gotham, Batman debe enfrentar uno de los mayores desafios psicologicos y fisicos para luchar contra la injusticia.",
+      "imagen": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-peliculas/caballero_oscuro.jpg",
+      "url": "https://firebasestorage.googleapis.com/v0/b/juego-6bb25.appspot.com/o/video%2FRels%20B%20-%20A%20M%C3%8D%20(Videoclip%20Oficial).mp4?alt=media&token=6a23d47a-dae6-4ea8-ad12-4112225439d8"
+  },
+  {
+      "titulo": "bebe",
+      "anio": 2014,
+      "descripcion": "Un equipo de exploradores viaja a traves de un agujero de gusano en el espacio en un intento por asegurar la supervivencia de la humanidad.",
+      "imagen": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-peliculas/interestellar.jpg",
+      "url": "https://firebasestorage.googleapis.com/v0/b/juego-6bb25.appspot.com/o/video%2FRels%20B%20-%20A%20M%C3%8D%20(Videoclip%20Oficial).mp4?alt=media&token=6a23d47a-dae6-4ea8-ad12-4112225439d8"
+  },
+  {
+      "titulo": "La La Land",
+      "anio": 2016,
+      "descripcion": "En Los Angeles, un pianista de jazz se enamora de una aspirante a actriz mientras ambos persiguen sus suenos en una ciudad conocida por destruir esperanzas y romper corazones.",
+      "imagen": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-peliculas/la-la-land.jpg",
+      "url": "https://www.imdb.com/title/tt3783958/"
+  },
+  {
+      "titulo": "El Padrino",
+      "anio": 1972,
+      "descripcion": "El patriarca de una poderosa familia de mafiosos intenta traspasar el negocio a su hijo renuente mientras se enfrenta a los retos de mantener su imperio criminal.",
+      "imagen": "https://raw.githubusercontent.com/jritsqmet/web-api/main/assets/images/api-peliculas/el_padrino.webp",
+      "url": "https://www.imdb.com/title/tt0068646/"
+  }
+]
